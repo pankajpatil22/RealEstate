@@ -968,11 +968,11 @@
   \*-----------------------------------*/
   
   .cta {
-    background: linear-gradient(to bottom, var(--white) 50%, var(--raisin-black-1) 50%);
+    background: linear-gradient(to bottom, var(#ffff) 50%, var(#242124) 50%);
   }
   
   .cta-card {
-    background: var(--orange-soda);
+    background: hsl(8.48deg 97.95% 61.76%);
     padding: 50px 25px;
     box-shadow: var(--shadow-2);
   }
@@ -984,13 +984,13 @@
   }
   
   .cta-card .card-title {
-    color: var(--white);
+    color: --white;
     line-height: 1.3;
     margin-bottom: 15px;
   }
   
   .cta-card .card-text {
-    color: var(--white);
+    color: --white;
     font-size: var(--fs-5);
     line-height: 1.8;
   }
@@ -1000,7 +1000,7 @@
     align-items: center;
     gap: 10px;
     color: var(--black);
-    background: var(--white);
+    background: --white;
     box-shadow: var(--shadow-2);
     border-color: var(--white);
     margin-inline: auto;
@@ -1023,8 +1023,8 @@
   \*-----------------------------------*/
   
   .footer {
-    background: var(--raisin-black-1);
-    color: var(--white);
+    background: #242124;
+    color: #ffff;
     margin-bottom: 68px;
   }
   
@@ -1310,6 +1310,11 @@
       width: 80px;
       height: 80px;
       font-size: 32px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: hsl(8, 100%, 97%);
+      color: hsl(9, 100%, 62%);
     }
   
     .features-card .card-title { --fs-6: 1.125rem; }
